@@ -1,0 +1,27 @@
+/* Nav */
+/*Nav*/
+#logo-accueil{
+    height: 5vh;
+}
+.navbar{
+    position:fixed;
+    background: rgba(244, 165, 96, 0.603);
+    opacity: 0.4;
+}
+.nav-link{
+    font-weight: bold;
+}
+.navbar-nav a{
+    color: rgb(158, 14, 14);
+}
+.navbar-nav a:hover{
+    color: black;
+}
+.navbar-toggler{
+    border: 3px solid rgb(158, 14, 14) !important;
+}
+.navbar .navbar-toggler-icon{ 
+    background-image: url(./Ressource/button.svg);
+    width: 1.5em;
+    height: 1.5em;
+}
