@@ -1,27 +1,148 @@
-/* Nav */
+/* variables */
+:root{
+    --navbar-color: rgba(244, 165, 96, 0.603);
+    --navbar-nav-color: rgb(158, 14, 14);
+    --navbar-nav-hover-color: black;
+    --navbar-toggler-border-color: rgb(158, 14, 14);
+    --header-color: white;
+}
+/* body*/
+html{
+    word-break: break-word;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+body{
+    word-break: break-word;
+}
 /*Nav*/
 #logo-accueil{
     height: 5vh;
 }
 .navbar{
     position:fixed;
-    background: rgba(244, 165, 96, 0.603);
+    background: var(--navbar-color);
     opacity: 0.4;
 }
 .nav-link{
     font-weight: bold;
 }
 .navbar-nav a{
-    color: rgb(158, 14, 14);
+    color: var(--navbar-nav-color);
 }
 .navbar-nav a:hover{
-    color: black;
+    color: var(--navbar-nav-hover-color);
 }
 .navbar-toggler{
-    border: 3px solid rgb(158, 14, 14) !important;
+    border: 3px solid var(--navbar-toggler-border-color) !important;
 }
 .navbar .navbar-toggler-icon{ 
     background-image: url(./Ressource/button.svg);
     width: 1.5em;
     height: 1.5em;
+}
+/* Parallax div */
+.parallax-outer{
+    height: 100vh;
+}
+.parallax{
+    background-image: url(./Ressource/image.jpg);
+    height: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#homepage{
+    bottom: 70px;
+    position: absolute;
+    left: 10%;
+    width: 1200px;
+}
+.outer-container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    color: var(--header-color);
+    font-size: 39px;
+    font-weight: 300;
+    font-style: italic;
+}
+h1{
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+#header-text{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 70px 0px 110px 0px;
+}
+strong{
+    font-weight: 700;
+}
+.space-between{
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+}
+.space-between .item{
+    display: inline-block;
+}
+.skill-box{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.skill-box svg{
+    margin-bottom: 20px;
+}
+.p-svg{
+    text-align: center;
+}
+
+/* Media querry */
+@media screen and (max-width: 1300px) {
+    #homepage{
+        width: 85%;
+    }
+    .outer-container{
+        max-width: 85%;
+    }
+}
+@media  screen and (max-width: 1024px){
+    .parallax{
+        background-attachment: scroll;
+    }
+}
+@media screen and (max-width: 1023px){
+    .parallax-outer{
+        height: 500px;
+    }
+    #homepage{
+        bottom: 0px;
+    }
+    #header-text{
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 387px){
+    header{
+        font-size: 1.2em;
+    }
+    .item svg{
+        width: 11vw;
+    }
+    .p-svg{
+        font-size: 12px;
+    }
 }
