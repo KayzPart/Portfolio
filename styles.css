@@ -12,7 +12,6 @@ html{
     margin: 0;
     padding: 0;
     border: 0;
-
 }
 body{
     word-break: break-word;
@@ -22,9 +21,8 @@ body{
     height: 5vh;
 }
 .navbar{
-    position:fixed;
     background: var(--navbar-color);
-    opacity: 0.4;
+    opacity: 0.9;
 }
 .nav-link{
     font-weight: bold;
@@ -48,7 +46,7 @@ body{
     height: 100vh;
 }
 .parallax{
-    background-image: url(./Ressource/image.jpg);
+    background-image: url(./Ressource/laptop.jpg);
     height: 100%;
     position: relative;
     background-attachment: fixed;
@@ -106,6 +104,26 @@ strong{
 .p-svg{
     text-align: center;
 }
+/* Row */
+.row{
+    padding: 80px 0px 60px 0px;
+}
+.profil{
+    max-width: 1200px;
+    margin: auto;
+}
+#photo-profil{
+    width: 450px;
+    border-radius: 50%;
+}
+.space-between #photo-profil{
+    display: inline-block;
+    width: 370px;
+}
+.p-profil{
+    font-weight: bOLD;
+}
+
 
 /* Media querry */
 @media screen and (max-width: 1300px) {
@@ -136,13 +154,36 @@ strong{
     }
 }
 @media screen and (max-width: 387px){
-    header{
-        font-size: 1.2em;
+    header {
+        font-size: 1.4em;
+    }
+    header h1{
+        font-size: 1em;
     }
     .item svg{
         width: 11vw;
     }
     .p-svg{
         font-size: 12px;
+    }
+    .row{
+        padding-top: 30px;
+    }
+    #photo-profil{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        margin:auto;
+    }
+    .pht-profil{
+        padding-bottom: 30px;
+    }
+    .profil p{
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+    .box2 h1{
+        margin-bottom: 0;
+        padding-bottom: 30px;
     }
 }
