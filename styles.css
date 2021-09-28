@@ -1,3 +1,6 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
 /* variables */
 :root{
     --navbar-color: rgba(244, 165, 96, 0.603);
@@ -172,7 +175,7 @@ strong{
 }
 /* Essaie competences */
 section{
-    padding: 80px 0px 60px 0px;
+    padding: 30px 0px 60px 0px;
 }
 .color-peps{
     background-color: rgb(187, 141, 73);
@@ -273,8 +276,301 @@ section{
     }
 }
 
+/* Time-line (experiences) */
+.box-timeline{
+    width: 100%;
+    height: 1500px;
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 80px 0 250px 0;
+    /* margin-bottom: 100px; */
+}
+.ligne{
+    height: 1000px;
+    width: 8px;
+    margin: 0 auto;
+    background: #333;
+}
+.rond{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    border: 1px solid #000;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1{top: 80px;}
+.r2{top: 386px;}
+.r3{top: 692px;}
+.r4{top: 1000px;}
+/* box timeline */
+.box{
+    color: #333;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    background: #f1f1f1;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.b1{
+    top: 80px;
+    left: calc(50% - 270px);
+}
+.b2{
+    top: 386px;
+    left: calc(50% + 270px);
+}
+.b3{
+    top: 692px;
+    left: calc(50% - 270px);
+}
+.b4{
+    top: 1000px;
+    left: calc(50% + 270px);
+}
+.box p{
+    line-height: 25px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+.btn-time-line{
+    display: block;
+    background: midnightblue;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+/* Portfolio overlay */
+#portfolio{
+    text-align: center;
+}
+.container{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+}
+/* 1er overlay */
+.img-portfolio{
+    transition: .5s ease;
+}
+.overlay{
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.text-portfolio{
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    opacity: 0;
+}
+.container:hover img{
+    opacity: 0.3;
+}
+.container:hover .text-portfolio{
+    opacity: 1;
+}
+/* 2eme overlay */
+/* .img-portfolio{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s linear;
+    opacity: 0;
+    font-size: 30px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 1;
+} */
+
+/* 3eme overlay */
+/* .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.text-portfolio{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+.container:hover .overlay{
+    transform: scale(1);
+} */
+
+/* 4eme overlay */
+/* .overlay{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: #008cba;
+    overflow: hidden;
+    transition: .5s ease;
+}
+.container:hover .overlay{
+    height: 100%;
+}
+.text-portfolio{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+
+/* dernier overlay */
+/* .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008cba;
+}
+.text-portfolio{
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 1;
+}
+.container:hover .text-portfolio{
+    opacity: 1;
+} */
+
+/* overlay ??? */
+/* 
 
 
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 76px;
+    transition: .5s ease;
+    -webkit-transition: all 0.5s;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.overlay .text-project{
+    text-align: center;
+    padding-top: 30px;
+    height: 100%;
+}
+#begenning ul.tags{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: green;
+    margin-top: 25px;
+}
+.text-project ul{
+    list-style: none;
+}
+.text-project ul.desc{
+    margin-left: 20px 30px;
+    height: 170px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    overflow: auto;
+}
+#begenning button{
+    margin: 0;
+    font-size: 15px;
+    padding-top: 12px 30px;
+    background-color: #2FDC9C;
+} */
+.project {
+    position: relative;
+    width: 575px;
+    height: 402px;
+    background-color: white;
+    margin-top: 40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.16);
+     box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 16%);
+}
+#begenning .img-portfolio{
+    background-image: url(./Ressource/headphones-6123966_640.jpg);
+}
+.img-portfolio{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 15px;
+}
 /* Media querry */
 @media screen and (max-width: 1300px) {
     #homepage{
@@ -301,6 +597,68 @@ section{
         line-height: 1.5em;
         margin-top: 30px;
         margin-bottom: 40px;
+    }
+    #competences .c-item.icon{
+        display: none;
+    }
+}
+@media screen  and (max-width: 1000px){
+    .ligne{
+        position: relative;
+        left: 200px;
+    }
+    .rond{
+        left: calc(50% + 200px);
+    }
+    .box{
+        left: calc(50% - 50px);
+    }
+}
+@media screen and (max-width:420px) {
+    #photo-profil{
+        width: 390px;
+    }
+    #competences .space-between{
+        font-size: 0.8em;
+    }
+    #competences .competence .c-item.content{
+        padding: 10px;
+        line-height: 30px;
+    }
+    #competences h6{
+        font-size: 12px;
+    }
+    #competences .content .element{
+        line-height: 23px;
+    }
+    #competences .content .item .stars{
+        line-height: 22px;
+    }
+    .ligne{
+        position: relative;
+        left: 150px;
+    }
+    .rond{
+        left: calc(50% + 150px);
+    }
+    .box{
+        width: 250px;
+        left: calc(50% - 50px);
+    }
+    header{
+        font-size: 26px;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    .space-between .skill-box{
+        font-size: 15px;
+    }
+    .btn-profil .btn-contact-pro{
+        padding: 10px;
+    }
+    .btn-profil .btn-cv{
+        padding: 10px;
     }
 }
 @media screen and (max-width: 387px){
@@ -346,5 +704,35 @@ section{
     .btn-profil .btn{
         padding: 10px 20px;
         font-size: 13px;
+    }
+    .ligne{
+        position: relative;
+        left: 100px;
+    }
+    .rond{
+        left: calc(50% + 100px);
+    }
+    .box{
+        left: calc(50% - 50px);
+        width: 200px;
+        min-height: 200px;
+    }
+}
+@media screen and (max-width: 376px){
+    #competences .space-between{
+        font-size: 0.8em;
+    }
+    #competences .space-between .stars{
+        font-size: 6px;
+    }
+    #competences .competence .c-item.content{
+        padding: 10px;
+        line-height: 21.5px;
+    }
+    #competences h6{
+        font-size: 10px;
+    }
+    #competences .content .element{
+        line-height: 20.5px;
     }
 }

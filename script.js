@@ -1,56 +1,25 @@
-// const button = document.querySelector('button');
+// animation timeline
 
-// button.addEventListener('click', event => {
-//   button.innerHTML = `Nombre de clics : ${event.detail}`;
-// });
+const allRonds = document.querySelectorAll('.rond');
+const allBoxes = document.querySelectorAll('.box');
 
+const controller = new ScrollMagic.Controller()
 
-function init()
-{
-    console.log('init();');
-    pages.create(30);
-}
+allBoxes.forEach(box => {
 
-let pages =
-{
-    tranform_backup: new Array(),
+    for(i = 0; i < allRonds.length; i++){
 
-    create: (n) =>
-    {
-        let a = 180;
-        let z = 0;
-        for(let i = 1; i <=n; i++)
-        {
-            let e = document.createElement('div');
-            e.id = 'page' + i;
-            e.className = 'page';
-            e.style.left = "75%";
-            e.style.opacity = '0.50';
-            z -= 500;
-            a -= 7;
-            pages.tranform_backup[e.id] = "translateZ("+ z +"px) rotateY("+ 15 +"deg)";
-            e.style.transform = pages.tranform_backup[e.id];
-            e.setAttribute('onclick','clickToFront("' + e.id + '");');
-            e.innerHTML = text;
-            document.getElementById('scene').appendChild(e);
+        if(allRonds[i].getAttribute('data-anim') === box.getAttribute('data-anim')){
+
+            let tween = gsap.from(box, {y: -50, opacity: 0, duration: 0.5})
+
+            let scene = new ScrollMagic.Scene({
+                triggerElement: allRonds[i],
+                reverse: false
+            })
+            .setTween(tween)
+            // .addIndicators()
+            .addTo(controller)
         }
-    },
-
-    clickToFront: (id) =>
-    {
-        console.log('clickToFront("'+id+'");');
-        let e = document.getElementById(id);
-        e.style.transform = "";
-        e.style.opacity = 1;
-        e.setAttribute('onclick','pages.clickToBack("' + e.id + '");');
-    },
-
-    clickToBack: (id) =>
-    {
-        console.log('clickToBack("'+id+'");');
-        let e = document.getElementById(id);
-        e.style.transform = pages.tranform_backup[e.id];
-        e.style.opacity = '0.25';
-        e.setAttribute('onclick','pages.clickToFront("' + e.id + '");');
     }
-}
+})
