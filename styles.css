@@ -13,7 +13,7 @@
     --header-font-weight: 300;
     --header-font-style: italic;
     --header-text-font-size: 30px;
-    --header-text-font-weight: 300;
+    --header-text-font-weight: 400;
     --header-text-color: rgba(13, 14, 13, 0.842);
     --h1-font-size: 80px;
     --h1-font-weight: 500;
@@ -80,13 +80,16 @@ body{
 }
 .outer-container{
     max-width: 1200px;
-    margin: auto;
+    margin: auto; 
 }
 header{
     color: var(--header-color);
     font-size: var(--header-font-size);
     font-weight: var(--header-font-weight);
     font-style: var(--header-font-style);
+    background: rgba(0, 0, 0, 0.445);
+    padding: 0 0 0 20px;
+    border-radius: 10px;
 }
 h1{
     font-size: var(--h1-font-size);
@@ -99,6 +102,9 @@ h1{
     font-size: var(--header-text-font-size);
     font-weight: var(--header-text-font-weight);
     margin: 70px 0px 110px 0px;
+    background: rgba(255, 255, 255, 0.473);
+    border-radius: 50px;
+    padding: 20px 0 5px 50px;
 }
 strong{
     font-weight: 700;
@@ -839,13 +845,15 @@ ul{
 }
 @media screen and (max-width: 387px){
     header {
-        font-size: 1.4em;
+        font-size: 15px;
     }
     header h1{
         font-size: 1em;
     }
     #header-text{
         margin-bottom: 20px;
+        font-size: 15px;
+        padding: 5px 10px 5px 20px;
     }
     .item svg{
         width: 11vw;
