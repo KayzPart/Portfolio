@@ -120,6 +120,13 @@ strong{
 .skill-box svg{
     margin-bottom: 20px;
 }
+.skill-box a{
+    text-decoration: none;
+    color: white;
+}
+.skill-box a:hover{
+    color: black;
+}
 .p-svg{
     text-align: center;
 }
@@ -378,6 +385,8 @@ section{
 .overlay-image{
     position: relative;
     width: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .overlay-image .image-box{
     display: block;
@@ -422,8 +431,21 @@ section{
 ul{
     list-style: none;
 }
-
-
+.hover button{
+    background-color: chartreuse;
+}
+.hover button a{
+    text-decoration: none;
+    color:black;
+}
+.txt1 i{
+    display: none;
+}
+/* Footer */
+.footer-contact{
+    background-color: chocolate;
+    padding-top: 20px;
+}
 /* Media querry */
 @media screen and (max-width: 1300px) {
     #homepage{
@@ -436,7 +458,9 @@ ul{
     width: 100%;
     height: 400px;
     }
-    
+    .txt1 i{
+        display: block;
+    }
 }
 @media screen and (max-width: 1024px) {
     .stars{
