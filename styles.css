@@ -422,9 +422,7 @@ section{
 ul{
     list-style: none;
 }
-.txt1 i{
-    display: none;
-}
+
 
 /* Media querry */
 @media screen and (max-width: 1300px) {
@@ -438,10 +436,46 @@ ul{
     width: 100%;
     height: 400px;
     }
+    
 }
-@media  screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
+    .stars{
+        transform: translateY(-10px);
+    }
+    .stars i{
+        font-size: 8px;
+    }
+    .overlay-image{
+        width: 50%;
+    }
+    #photo-profil{
+        width: 400px;
+    }
+    #competences .competence .c-item.content{
+        font-size: 20px;
+    }
+}
+@media  screen and (max-width: 1023px){
+    #homepage{
+        bottom: 0;
+    }
+    header p{
+        font-size: 55px;
+    }
     .parallax{
         background-attachment: scroll;
+    }
+    .parallax-outer{
+        height: 500px;
+    }
+    #header-text{
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .txt1 i{
+        display: block;
     }
     .h2-box{
         padding-top: 20px;
@@ -457,7 +491,6 @@ ul{
     }
     #photo-profil{
         width: 400px;
-        transform: translateX(35%);
     }
     .box2 p{
         font-size: 25px;
@@ -505,26 +538,6 @@ ul{
         transform: translateY(30px);
     }
 }
-@media screen and (max-width: 1023px){
-    .parallax-outer{
-        height: 500px;
-    }
-    #homepage{
-        bottom: 0px;
-    }
-    #header-text{
-        font-size: 1em;
-        line-height: 1.5em;
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-    #competences .c-item.icon{
-        display: none;
-    }
-    .txt1 i{
-        display: block;
-    }
-}
 @media screen  and (max-width: 1000px){
     .ligne{
         position: relative;
@@ -538,8 +551,21 @@ ul{
     }
 }
 @media screen and (max-width: 768px){
+    header p{
+        font-size: 35px;
+    }
+    #photo-profil{
+        transform: translateX(42.5%);
+    }
     .overlay-image{
         width: 50%;
+    }
+    .names h6{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .stars i{
+        font-size: 8px;
     }
     .hover ul li{
         font-size: 20px;
@@ -559,6 +585,12 @@ ul{
     }
     .box-timeline{
         height: 1650px;
+    }
+    .box h2{
+        font-size: 26px;
+    }
+    .box p{
+        font-size: 18px;
     }
     .h2-box{
         padding-top: 20px;
@@ -592,6 +624,9 @@ ul{
     } 
 }
 @media screen and (max-width:540px) {
+    .item-desc p{
+        font-size: 15px;
+    }
     .hover .txt2 button{
         font-size: 15px;
         padding: 5px;
@@ -602,7 +637,7 @@ ul{
     }
     #photo-profil{
         width: 310px;
-        /* transform: translateX(35%); */
+        transform: translateX(35%);
     }
     .row{
         padding-top: 50px;
@@ -653,19 +688,18 @@ ul{
         top: 1320px;
     }
     .names h6{
-        font-size: 11px;
-    }
-    .stars i{
-        font-size: 9px;
-    }
-    #competences .content .element{
+        font-size: 8px;
         line-height: 22px;
+        transform: translateY(-5px);
+    }
+    #competences .competence .c-item.content{
+        font-size:2px;
     }
     #shop .stars{
-        transform: translateY(-7px);
+        transform: translateY(-10px);
     }
     #soft-skills .stars{
-        transform: translateY(-7px);
+        transform: translateY(-10px);
     }
     header p{
         font-size: 25px;
@@ -674,7 +708,8 @@ ul{
 }
 @media screen and (max-width:420px) {
     #photo-profil{
-        width: 390px;
+        width: 230px;
+        transform: translateX(33%);
     }
     #competences .space-between{
         font-size: 0.8em;
@@ -682,6 +717,10 @@ ul{
     #competences .competence .c-item.content{
         padding: 10px;
         line-height: 30px;
+        width: 100%;
+    }
+    .competence .icon{
+        display: none;
     }
     #competences h6{
         font-size: 12px;
@@ -690,7 +729,7 @@ ul{
         line-height: 23px;
     }
     #competences .content .item .stars{
-        line-height: 22px;
+        line-height: 24px;
     }
     .ligne{
         position: relative;
@@ -769,6 +808,11 @@ ul{
         color: black;
     }
 }
+@media screen and (max-width: 414px) {
+    #competences .space-between .stars i{
+        line-height: 31px;
+    }
+}
 @media screen and (max-width: 387px){
     header {
         font-size: 1.4em;
@@ -791,12 +835,10 @@ ul{
     }
     #photo-profil{
         width: 200px;
-        display: flex;
-        justify-content: center;
-        margin:auto;
+        transform: translateX(25%);
     }
     .pht-profil{
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }
     .profil p{
         margin-bottom: 0;
@@ -827,6 +869,9 @@ ul{
     }
 }
 @media screen and (max-width: 376px){
+    #photo-profil{
+        transform: translateX(35%);
+    }
     #competences .space-between{
         font-size: 0.8em;
     }
@@ -842,6 +887,9 @@ ul{
     }
     #competences .content .element{
         line-height: 20.5px;
+    }
+    .stars i{
+        line-height: 26px;
     }
     .overlay-image{
         width: 100%;
@@ -924,9 +972,21 @@ ul{
          width: 50%;
     }
 }
+@media screen and (max-width: 360px) {
+    #competences .space-between .stars i{
+        line-height: 31px;
+    }
+}
 @media screen and (max-width: 320px){
+        #photo-profil{
+            transform: translateX(25%);
+        }
        .overlay-image{
            width: 100%;
+       }
+       .stars i{
+           font-size: 5px;
+           line-height: 26px;
        }
        .h2-box{
            padding-top: 20px;
@@ -1007,8 +1067,14 @@ ul{
        }
 }
 @media screen and (max-width: 280px) {
+    header p{
+        font-size: 20px;
+    }
+    header h1{
+        font-size: 20px;
+    }
     #photo-profil{
-        transform: translateX(0);
+        transform: translateX(12.5%);
     }
     .row{
         padding-bottom: 20px;
