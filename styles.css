@@ -443,6 +443,67 @@ ul{
     .parallax{
         background-attachment: scroll;
     }
+    .h2-box{
+        padding-top: 20px;
+    }
+    .box h2{
+        font-size: 35px;
+    }
+    .box small{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 25px;
+    }
+    #photo-profil{
+        width: 400px;
+        transform: translateX(35%);
+    }
+    .box2 p{
+        font-size: 25px;
+    }
+    .pht-profil p{
+        font-size: 20px;
+    }
+    .item-desc p {
+        font-size: 18px;
+    }
+    .names h6{
+        font-size: 16px;
+    }
+    .stars i{
+        font-size: 15px;
+    }
+    #front-end .stars{ 
+        transform: translateY(-10px);
+    }
+    #shop .stars{
+        transform: translateY(-6px);
+    }
+    #soft-skills .stars{
+        transform: translateY(-4px);
+    }
+    .names{
+        line-height: 24px;
+    }
+    .item-desc{
+        font-size: 18px;
+    }
+    .item-desc i{
+        font-size: 18px;
+    }
+    .item-desc b{
+        font-size: 18px;
+    }
+    .overlay-image{
+        width: 50%;
+    }
+    .hover button{
+        background-color: chartreuse;
+        border-radius: 50px;
+        padding: 15px;
+        transform: translateY(30px);
+    }
 }
 @media screen and (max-width: 1023px){
     .parallax-outer{
@@ -484,7 +545,131 @@ ul{
         font-size: 20px;
         width: 40%;
     }
-    .hover .txt2
+    .hover .txt2 button{
+        font-size: 20px;
+        background-color: red;
+        border-radius: 50px;
+        position: absolute;
+        left: 60%;
+        top: 35%;
+    }
+    .txt2 button a{
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+    .box-timeline{
+        height: 1650px;
+    }
+    .h2-box{
+        padding-top: 20px;
+    }
+    .ligne{
+        height: 1290px;
+    }
+    .b2{
+        top: 430px;
+    }
+    .r2{
+        top: 430px;
+    }
+    .b3{
+        top: 740px;
+    }
+    .r3{
+        top: 740px;
+    }
+    .b4{
+        top: 1030px;
+    }
+    .r4{
+        top: 1030px;
+    }
+    .b5{
+        top: 1290px;
+    }
+    .r5{
+        top: 1290px;
+    } 
+}
+@media screen and (max-width:540px) {
+    .hover .txt2 button{
+        font-size: 15px;
+        padding: 5px;
+        transform: translateY(-20px);
+    }
+    .hover .txt2 li{
+        font-size: 15px;
+    }
+    #photo-profil{
+        width: 310px;
+        /* transform: translateX(35%); */
+    }
+    .row{
+        padding-top: 50px;
+    }
+    .box2 p{
+        font-size: 18px;
+    }
+    .btn-profil .btn{
+        padding: 10px 20px;
+    }
+    .box-timeline{
+        padding-top: 20px;
+    }
+    .box h2{
+        font-size: 25px;
+    }
+    .box small{
+        font-size: 15px;
+    }
+    .box p{
+        font-size: 20px;
+    }
+    .ligne{
+        height: 1320px;
+    }
+    .b2{
+        top: 460px;
+    }
+    .r2{
+        top: 460px;
+    }
+    .b3{
+        top: 790px;
+    }
+    .r3{
+        top: 790px;
+    }
+    .b4{
+        top: 1070px;
+    }
+    .r4{
+        top: 1070px;
+    }
+    .b5{
+        top: 1320px;
+    }
+    .r5{
+        top: 1320px;
+    }
+    .names h6{
+        font-size: 11px;
+    }
+    .stars i{
+        font-size: 9px;
+    }
+    #competences .content .element{
+        line-height: 22px;
+    }
+    #shop .stars{
+        transform: translateY(-7px);
+    }
+    #soft-skills .stars{
+        transform: translateY(-7px);
+    }
+    header p{
+        font-size: 25px;
+    }
     
 }
 @media screen and (max-width:420px) {
@@ -602,6 +787,7 @@ ul{
     }
     .row{
         padding-top: 30px;
+        padding-bottom: 30px;
     }
     #photo-profil{
         width: 200px;
@@ -819,4 +1005,73 @@ ul{
             font-size: 13px;
             width: 50%;
        }
+}
+@media screen and (max-width: 280px) {
+    #photo-profil{
+        transform: translateX(0);
+    }
+    .row{
+        padding-bottom: 20px;
+    }
+    #competences{
+        padding-bottom: 20px;
+    }
+    #competences h6{
+        font-size: 9px;
+    }
+    .btn-profil .btn{
+        padding: 10px;
+    }
+    .stars i{
+        font-size: 5px;
+    }
+    .c-item h4{
+        font-size: 17px;
+    }
+    .item-desc{
+        font-size: 15px;
+    }
+    .item-desc b{
+        font-size: 13px;
+    }
+    .item-desc p{
+        font-size: 13px;
+    }
+    .box-timeline{
+        height: 1600px;
+    }
+    .box{
+        width: 220px;
+    }
+    .ligne{
+        height: 1390px;
+        left: 105px;
+    }
+    .rond{
+        left: calc(50% + 105px);
+    }
+    .b2{
+        top: 430px;
+    }
+    .r2{
+        top: 430px;
+    }
+    .b3{
+        top: 790px;
+    }
+    .r3{
+        top: 790px;
+    }
+    .b4{
+        top: 1110px;
+    }
+    .r4{
+        top: 1110px;
+    }
+    .b5{
+        top: 1350px;
+    }
+    .r5{
+        top: 1350px;
+    }
 }
