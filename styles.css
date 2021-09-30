@@ -476,6 +476,17 @@ ul{
         left: calc(50% - 50px);
     }
 }
+@media screen and (max-width: 768px){
+    .overlay-image{
+        width: 50%;
+    }
+    .hover ul li{
+        font-size: 20px;
+        width: 40%;
+    }
+    .hover .txt2
+    
+}
 @media screen and (max-width:420px) {
     #photo-profil{
         width: 390px;
@@ -522,9 +533,58 @@ ul{
     .btn-profil .btn-cv{
         padding: 10px;
     }
+    .box{
+        width: 300px;
+    }
+    .box-timeline{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 1600px;
+    }
+    .h2-box{
+        padding-top: 20px;
+    }
+    .box h2{
+        font-size: 18px;
+    }
+    .box small{
+        font-size: 12px;
+    }
+    .box p {
+        font-size: 15px;
+        margin: 0;
+    }
+    .b1{
+        top: 20px;
+    }
+    .r1{
+        top: 20px;
+    }
+    .b5{
+        top: 1306px;
+    }
+    .overlay-image{
+        width: 100%;
+    }
+    .hover ul li{
+        width: 30%;
+        font-size: 20px;
+    }
+    .hover button{
+        background-color: aquamarine;
+        border-radius: 50px;
+        position: absolute;
+        left: 60%;
+        bottom: 35%;
+    }
+    .hover button a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
 }
 @media screen and (max-width: 387px){
-
     header {
         font-size: 1.4em;
     }
@@ -597,4 +657,166 @@ ul{
     #competences .content .element{
         line-height: 20.5px;
     }
+    .overlay-image{
+        width: 100%;
+    }
+    .h2-box{
+        padding-top: 20px;
+    }
+    .box-timeline{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 1550px;
+    }
+    .box h2{
+        font-size: 18px;
+    }
+    .box small{
+        font-size: 12px;
+    }
+    .box p {
+        font-size: 15px;
+        margin: 0;
+    }
+    .box{
+        width: 300px;
+        left: calc(55% - 55px);
+    }
+    .b1{
+        top: 20px;
+    }
+    .r1{
+        top: 20px;
+    }
+    .b2{
+        top: 408px;
+    }
+    .r2{
+        top: 408px;
+    }
+    .b3{
+        top: 759px;
+    }
+    .r3{
+        top: 759px;
+    }
+    .b4{
+        top: 1050px;
+    }
+    .r4{
+        top: 1050px;
+     }
+    .b5{
+        top: 1306px;
+    }
+    .rond{
+        width: 60px;
+        height: 60px;
+        left: calc(50% + 150px);
+    }
+    .rond span{
+        font-size: 30px;
+    }
+    .ligne{
+        left: 150px;
+    }
+    .hover button{
+        font-size: 15px;
+        border-radius: 50%;
+        background-color: #2FDC9C;
+        position: absolute;
+        left: 65%;
+        bottom: 35%;
+    }
+    .hover button a{
+     text-decoration: none;
+     color: #333;
+     font-weight: 700;
+    }
+    .hover ul li{
+         font-size: 15px;
+         width: 50%;
+    }
+}
+@media screen and (max-width: 320px){
+       .overlay-image{
+           width: 100%;
+       }
+       .h2-box{
+           padding-top: 20px;
+       }
+       .box-timeline{
+           padding-top: 20px;
+           padding-bottom: 20px;
+           height: 1550px;
+       }
+       .box h2{
+           font-size: 18px;
+       }
+       .box small{
+           font-size: 12px;
+       }
+       .box p {
+           font-size: 15px;
+           margin: 0;
+       }
+       .box{
+           width: 250px;
+           left: calc(55% - 55px);
+       }
+       .b1{
+           top: 20px;
+       }
+       .r1{
+           top: 20px;
+       }
+       .b2{
+           top: 408px;
+       }
+       .r2{
+           top: 408px;
+       }
+       .b3{
+           top: 759px;
+       }
+       .r3{
+           top: 759px;
+       }
+       .b4{
+           top: 1050px;
+       }
+       .r4{
+           top: 1050px;
+        }
+       .b5{
+           top: 1306px;
+       }
+       .rond{
+           width: 60px;
+           height: 60px;
+           left: calc(50% + 120px);
+       }
+       .rond span{
+           font-size: 30px;
+       }
+       .ligne{
+           left: 120px;
+       }
+       .hover button{
+           font-size: 13px;
+           border-radius: 50%;
+           background-color: #2FDC9C;
+           position: absolute;
+           left: 65%;
+           bottom: 35%;
+       }
+       .hover button a{
+        text-decoration: none;
+        color: #333;
+        font-weight: 700;
+       }
+       .hover ul li{
+            font-size: 13px;
+            width: 50%;
+       }
 }
