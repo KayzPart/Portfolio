@@ -842,6 +842,9 @@ ul{
     #competences .space-between .stars i{
         line-height: 31px;
     }
+    footer .skill-box .p-svg{
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 387px){
     header {
@@ -898,6 +901,9 @@ ul{
         left: calc(50% - 50px);
         width: 200px;
         min-height: 200px;
+    }
+    footer .skill-box .p-svg{
+        font-size: 8px;
     }
 }
 @media screen and (max-width: 376px){
@@ -1003,10 +1009,16 @@ ul{
          font-size: 15px;
          width: 50%;
     }
+    footer .skill-box .p-svg{
+        font-size: 8px;
+    }
 }
 @media screen and (max-width: 360px) {
     #competences .space-between .stars i{
         line-height: 31px;
+    }
+    footer .skill-box .p-svg{
+        font-size: 8px;
     }
 }
 @media screen and (max-width: 320px){
@@ -1096,6 +1108,9 @@ ul{
        .hover ul li{
             font-size: 13px;
             width: 50%;
+       }
+       footer .skill-box .p-svg{
+           font-size: 8px;
        }
 }
 @media screen and (max-width: 280px) {
