@@ -3,9 +3,9 @@
 }
 /* variables */
 :root{
-    --navbar-color: rgba(244, 165, 96, 0.603);
+    --navbar-color: rgba(161, 132, 106, 0.603);
     --navbar-opacity: 0.9;
-    --navbar-nav-color: rgb(158, 14, 14);
+    --navbar-nav-color: rgb(100, 11, 22);
     --navbar-nav-hover-color: black;
     --navbar-toggler-border-color: rgb(158, 14, 14);
     --header-color: white;
@@ -17,10 +17,14 @@
     --header-text-color: rgba(13, 14, 13, 0.842);
     --h1-font-size: 80px;
     --h1-font-weight: 500;
-    --btn-cv: #2FDC9C;
-    --btn-cv-hover-color: red;
-    --btn-contact-pro: #3FA8FD;
-    --btn-contact-pro-hover-color: rgb(126, 126, 51);
+    --btn-cv: rgba(100, 11, 21, 0.363);
+    --btn-cv-hover-color: rgba(161, 132, 106, 0.603);
+    --btn-contact-pro: rgba(100, 11, 21, 0.363);
+    --btn-contact-pro-hover-color: rgba(161, 132, 106, 0.603);
+    --footerContact:rgba(161, 132, 106, 0.603);
+    --backgroundLigne:rgba(211, 163, 92, 0.822);
+    --backgroundRond:rgb(211, 163, 92);
+    --borderRond:rgba(211, 163, 92, 0.986);
 }
 /* body*/
 html{
@@ -33,6 +37,7 @@ html{
 }
 body{
     word-break: break-word;
+    background: linear-gradient(0deg, rgba(88, 144, 142, 0.171) 0%, rgba(253, 215, 45, 0.205) 98%);
 }
 /*Nav*/
 #logo-accueil{
@@ -102,7 +107,7 @@ h1{
     font-size: var(--header-text-font-size);
     font-weight: var(--header-text-font-weight);
     margin: 70px 0px 110px 0px;
-    background: rgba(255, 255, 255, 0.473);
+    /* background: rgba(255, 255, 255, 0.473); */
     border-radius: 50px;
     padding: 20px 0 5px 50px;
 }
@@ -135,26 +140,39 @@ strong{
 }
 .p-svg{
     text-align: center;
+    color: white;
 }
 /* Row */
 .row{
     padding: 80px 0px 60px 0px;
+    background-image: var(--rowBackground);
     
+}
+/* A propos */
+#apropos{
+    font-weight: 500;
+}
+#apropos a{
+    text-decoration: none;
+    color: rgb(100, 11, 22);
+    font-weight: bold;
 }
 .profil{
     max-width: 1200px;
     margin: auto;
 }
 #photo-profil{
-    width: 450px;
+    width: 30vw;
     border-radius: 50%;
+    border: solid 3px rgba(70, 50, 50, 0.7);
+    box-shadow: 2px 2px 30px 15px rgba(70, 50, 50, 0.7);
 }
-.space-between #photo-profil{
+/* .space-between #photo-profil{
     display: inline-block;
     width: 370px;
-}
+} */
 .p-profil{
-    font-weight: bold;
+    font-weight: 500;
 }
 .profil p{
     line-height: 40px;
@@ -180,6 +198,22 @@ strong{
 .btn-profil .btn-contact-pro:hover{
     background-color: var(--btn-contact-pro-hover-color);
 }
+.modal-body h6{
+    text-align: center;
+}
+.p-modal-body{
+    text-align: center;
+}
+.modal-body .space-around{
+    display: flex;
+    justify-content: space-around;
+}
+.modal-body .space-around a{
+    color: black;
+}
+.modal-body .space-around a:hover{
+    color: rgb(156, 92, 92);
+}
 .btn-profil .btn-cv{
     background-color: var(--btn-cv);
 }
@@ -191,7 +225,7 @@ section{
     padding: 30px 0px 60px 0px;
 }
 .color-peps{
-    background-color: rgb(187, 141, 73);
+    background-image: var(--colorPepsBackground);
 }
 .h2-comptetences{
     text-align: center;
@@ -288,10 +322,8 @@ section{
         transform: translate3d(0, 0, 0);
     }
 }
-
 /* Time-line (experiences) */
 .h2-box{
-    background-color: #f1f1f1;
     margin-bottom: 0;
     padding-bottom: 20px;
     display: flex;
@@ -303,7 +335,7 @@ section{
 .box-timeline{
     width: 100%;
     height: 1800px;
-    background-color: #f1f1f1;
+   
     position: relative;
     padding: 80px 0 250px 0;
     /* margin-bottom: 100px; */
@@ -312,15 +344,15 @@ section{
     height: 1300px;
     width: 8px;
     margin: 0 auto;
-    background: #333;
+    background: var(--backgroundLigne);
 }
 .rond{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #333;
+    background: var(--backgroundRond);
     position: absolute;
-    border: 1px solid #000;
+    border: 1px solid var(--borderRond);
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -447,9 +479,11 @@ ul{
 .txt1 i{
     display: none;
 }
+/* Portfolio image jeu */
+
 /* Footer */
 .footer-contact{
-    background-color: chocolate;
+    background-color: var(--footerContact);
     padding-top: 20px;
 }
 /* Media querry */
