@@ -1,598 +1,737 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tiffany FLORE, jeune stagiaire en préqual' développeur web et applications mobile.">
-        <title>Tiffany Flore Portfolio & CV en ligne</title>
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="./bootstrap.css">
-        <link rel="shortcut icon" href="./Ressource/logo-acceuil.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid justify-content-end">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-trigger="hover">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">
-                      <img id="logo-accueil" src="./Ressource/logo-acceuil.png" alt="logo-accueuil">
-                  </a>
-                  <a class="nav-link" href="#apropos">À PROPOS</a>
-                  <a class="nav-link" href="#competences">COMPÉTENCES</a>
-                  <a class="nav-link" href="#parcours">PARCOURS</a>
-                  <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                  <a class="nav-link" href="#contact">CONTACT</a>
-                </div>
-              </div>
-            </div>
-        </nav>
-        <div class="parallax-outer">
-          <div class="parallax" id="home">
-            <div class="outer-container" id="homepage">
-              <header>
-                <p>
-                  Bonjour, je m'appelle Tiffany et je suis
-                </p>
-                <h1>
-                  Stagiaire en développement web et applications mobiles
-                </h1>
-              </header>
-              <div id="header-text">
-                <p>
-                  Je suis à la recherche d'un <strong>stage</strong> à <strong>Lyon</strong> et ses alentours à partir d' <strong>Octobre 2022</strong>
-                </p>
-              </div>
-              <div class="space-between">
-                <div class="item skill-box animated">
-                  <a href="#linkedin">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                    <p class="p-svg">
-                    Linkedin
-                    </p>
-                  </a>
-                </div>
-                <div class="item skill-box animated">
-                  <a href="#github">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    <p class="p-svg">
-                      Github
-                    </p>
-                  </a>
-                </div>
-                <div class="item skill-box animated">
-                  <a href="#contact">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                      <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
-                    </svg>
-                    <p class="p-svg">
-                      Contact
-                    </p>
-                  </a>
-                </div>
-                <div class="item skill-box animated">
-                  <a href="#localisation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    <p class="p-svg">
-                      Où me trouver
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="profil col-lg-5 col-12">
-            <div class="pht-profil">
-              <img id="photo-profil" src="./Ressource/tiff.png" alt="photo-profil" width="100%">
-            </div>
-            <p>
-              <span class="p-profil">Nom :</span> 
-              Tiffany FLORE <br>
-              <span class="p-profil">Age :</span>
-              27 ans <br>
-              <span class="p-profil">Ville actuelle :
-              </span> Oyonnax (01) <br>
-              <span class="p-profil">Loisirs :</span> Danse, musique, boxe, lecture
-            </p>
-          </div>
-          <div class="col-lg-7 col-12 item box2" id="apropos">
-            <h1>À PROPOS DE MOI</h1>
-            <p>
-              Jeune stagiare en développement web et applications mobiles, je recherche un stage à partir d'Octobre 2022.
-            </p>
-            <p>
-              Ce stage me permettra de découvrir le métier de développeur, d'appréhender les différents styles : <strong>Front-End</strong>, <strong>Back-End</strong>, et <strong>Full-Stack</strong>.
-            </p>
-            <p>
-              Je suis actuellement en formation qualifiante, au centre de formation <a href="https://www.onlineformapro.com/">ONLINE FORMAPRO</a> sur Ambérieu-en-Bugey (01).
-              <br>
-              Mon objectif est d'atteindre est de décrocher mon diplôme, dans cette formation qualifiante afin de trouver une agence avec qui, je pourrais grandir, collaborer, et fructifier les projets et ambitions communes.
-            </p>
-            <p>
-              Vous verrez dans mes compétences les différentes matières, technologies, et environement de travail que j'ai pu étudier jusqu'à présent.
-              <br>
-              Vous verrez qu'avec les connaissances acquises à ce jour, je peux déjà vous présenter un petit bout de moi à travers mon travail, que je vous présente dans mon Portfolio.
-            </p>
-            <p>
-              Je suis ambitieuse et autonome de nature, je suis une personne dynamique et déterminée. 
-              <br>
-              Je mets un point d'honneur à satisfaire les missions qui me sont données. 
-              <br>
-              C'est avec conviction et motivation que j'atteindrais mes obejctifs ! 
-            </p>
-            <p>
-              Vous souhaitez poursuivre l'aventure avec moi ? <br><br>
-              Restez connectés ! 
-              <br><br>
-              J'agrémenterais mon Portfolio au fil des projets réalisés ♥
-            </p>
-            <p>
-              Longue vie et prospérité à tous et à toutes ! ♥
-            </p>
-          </div>
-          <div class="col-12 btn-profil">
-            <!-- <a class="btn btn-primary btn-contact-pro" href="#telephone" role="button">ME CONTACTER</a> -->
-            <!-- Button trigger modal -->
-          <button type="button" class="btn btn-contact-pro" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Me contacter
-          </button>
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <h6>Téléphone :</h6>
-                  <p class="p-modal-body">
-                   07.78.79.37.85
-                  </p>
-                  <h6>Mail :</h6>
-                  <p class="p-modal-body">
-                   tiffany.flore.codeur@gmail.com
-                  </p>
-                  <div class="space-around">
-                    <a href="https://www.linkedin.com/in/tiffany-flore" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                    </a>
-                    <a href="https://github.com/KayzPart/" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
-              </div>
-            </div>
-          </div>
-            <a class="btn btn-primary btn-cv" href="./Ressource/Tiffany Flore CV_compressed.pdf" target="_blank" role="button">TÉLÉCHARGER MON CV</a>
-          </div>
-        </div>
-        <section id="competences" class="color-peps">
-          <div class="outer-container">
-            <h2 class="h2-competences">Compétences</h2>
-            <div class="under-title"></div>
-            <div class="competence center fadeInLeft animated" id="front-end">
-              <div class="c-item content">
-                <h4>Front-End</h4>
-                <div class="item-desc">
-                  <p>Je vous présente dans cette catégorie les différents languages informatiques, frameworks, et supports numériques que j'ai pu découvrir dans ma formation préqualifiante en développeur web et applications mobiles.</p>
-                </div>
-                <div class="space-between">
-                  <div class="item element">
-                    <div class="space-between">
-                      <div class="item names">
-                        <h6>HTML5</h6>
-                        <h6>CSS3</h6>
-                        <h6>BOOTSTRAP 5.1</h6>
-                        <H6>JAVASCRIPT</H6>
-                      </div>
-                      <div class="item stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <br>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <br>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <br>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item element">
-                    <div class="space-between">
-                      <div class="item names">
-                        <h6>PHOTOSHOP</h6>
-                        <h6>ILLUSTRATOR</h6>
-                        <h6>WORDPRESS</h6>
-                      </div>
-                      <div class="item stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <br>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <br>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-item icon front">
-                <i class="bi bi-code-slash"></i>
-              </div>
-            </div>
-            <div class="competence center fadeInRight animated" id="shop">
-              <div class="c-item icon shop" >
-                <i class="bi bi-shop"></i>
-              </div>
-              <div class="c-item content">
-                <h4>Commerce</h4>
-                <div class="item-desc">
-                  <p>Issue d'une formation de niveau 2nd en Bac Pro commerce, j'ai effectuer un apprentissage au sein d'une enseigne marchande. <br> J'ai par la suite pris un poste en restauration en tant qu'employée polyvalente. <br> Ces expériences m'on permise de développer plusieurs connaissances sur les techniques de ventes et les procédures qui en découlent.</p>
-                </div>
-                <div class="space-between">
-                  <div class="item element">
-                    <div class="space-between">
-                      <div class="item names">
-                        <h6>ENCAISSER</h6>
-                        <h6>ACCUEILLIR</h6>
-                      </div>
-                      <div class="item stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i> 
-                        <i class="bi bi-star-half"></i>
-                        <br>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i> 
-                        <i class="bi bi-star-fill"></i> 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item element">
-                    <div class="space-between">
-                      <div class="item names">
-                        <h6>SERVIR</h6>
-                        <h6>HACCP</h6>
-                      </div>
-                      <div class="item stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                        <br>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i> 
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="competence center fadeInLeft animated" id="soft-skills">
-              <div class="c-item content">
-                <h4>Soft Skills</h4>
-                <div class="item-desc">
-                  <p>D'autres qualitées seront mise en évidence dans la section qui suivra "environement de travail". 
-                 </p>
-                </div>
-                <div class="space-between">
-                  <div class="item element">
-                    <div class="space-between">
-                      <div class="item names">
-                        <h6>RIGOUREUSE</h6>
-                      </div>
-                      <div class="item stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item element">
-                    <div class="space-between">
-                      <div class="item names">
-                        <h6>ORGANISÉE</h6>
-                      </div>
-                      <div class="item stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-item icon soft-s">
-                <i class="bi bi-person-fill"></i>
-              </div>
-            </div>
-            <div class="competence center fadeInRight animated" id="work">
-              <div class="c-item icon network" >
-                <i class="bi bi-briefcase-fill"></i>
-              </div>
-              <div class="c-item content">
-                <h4>Environement de travail</h4>
-                <div class="item-desc end">
-                  <i class="bi bi-laptop"></i>
-                  <b>Systèmes d'exploitation :</b> Windows 10, Linux.
-                  <br>
-                  <i class="bi bi-code-slash"></i>
-                  <b>Environement de développement :</b> Visual Studio Code, Github.
-                  <br>
-                  <i class="bi bi-award-fill"></i>
-                  <b>Autres qualités :</b> Capacité d'adaptation, force de proposition, perfectionniste, gestion du stress.
-                </div>
-              </div>
-            </div>
-          <div>
-        </section>
-<!-- Time-line (expérience) -->
-        <h2 class="h2-box" id="parcours">PARCOURS</h2>
-        <div class="box-timeline">
-          <div class="ligne"></div>
 
-          <div class="rond r1" data-anim="1"><span>&#128187;</span></div>
-          <div class="rond r2" data-anim="2"><span>&#127981;</span></div>
-          <div class="rond r3" data-anim="3"><span>&#128717;</span></div>
-          <div class="rond r4" data-anim="4"><span>&#127869;</span></div>
-          <div class="rond r5" data-anim="5"><span>&#128366;</span></div>
-          <div class="box b1" data-anim="1">
-            
-            <h2>Formation Qualifiante</h2>
-            <small>Année 2022</small>
-            <p>
-              Du 3 Janvier au 28 Novembre 2022, vous me trouverez au centre de formation Onlineformapro sur Ambérien-en-Bugey, afin de me préparer au métier de développeur web et applications mobiles ♥
-            </p>
-            <a href="https://www.onlineformapro.com/" target="_blank" class="btn-time-line">En savoir plus ...</a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tiffany FLORE, jeune stagiaire en préqual' développeur web et applications mobile.">
+  <title>Tiffany Flore Portfolio & CV en ligne</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="shortcut icon" href="./Ressource/logo-acceuil.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="../templates/tiny/tinymce/js/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript">
+    tinymce.init({
+      selector: '#message'
+    });
+  </script>
+</head>
+<!-- <body> -->
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-trigger="hover">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">
+            <img id="logo-accueil" src="./Ressource/logo-acceuil.png" alt="logo-accueuil">
+          </a>
+          <a class="nav-link" href="#apropos">À PROPOS</a>
+          <a class="nav-link" href="#competences">COMPÉTENCES</a>
+          <a class="nav-link" href="#parcours">PARCOURS</a>
+          <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="parallax-outer">
+    <div class="parallax" id="home">
+      <div class="outer-container" id="homepage">
+        <header>
+          <p>
+            Bonjour, je m'appelle Tiffany et je suis
+          </p>
+          <h1>
+            Stagiaire en développement web et applications mobiles
+          </h1>
+        </header>
+        <div id="header-text">
+          <p>
+            Je suis à la recherche d'un <strong>stage</strong> à <strong>Lyon</strong> et ses alentours à partir d'
+            <strong>Octobre 2022</strong>
+          </p>
+        </div>
+        <div class="space-between">
+          <div class="item skill-box">
+            <a href="#linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+              <p class="p-svg">
+                Linkedin
+              </p>
+            </a>
           </div>
-          <div class="box b2" data-anim="2">
-            <h2>Travail en industrie</h2>
-            <small>Juin.2017 à Déc.2020</small>
-            <p>
-              Durant plusieurs années, suite à mon expérience dans le commerce, j'ai travailler dans différentes structures industrielles, notament dans la production automobile, pharmaceutique, et cosmétiques.
-            </p>
+          <div class="item skill-box">
+            <a href="#github">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <p class="p-svg">
+                Github
+              </p>
+            </a>
           </div>
-          <!-- <small style="text-align: center; display: block;">Tiffany, we ♥ you</small> -->
-          <div class="box b3" data-anim="3">
-            <h2>Employée commerciale</h2>
-            <small>Janv.2016 à Mai.2017</small>
-            <p>
-              L'accueil et la réponse aux besoins clientèles, tout en gérant l'attente que la demande client peut engendrer afin d'y répondre le plus rapidement possible, ont étés mes principales missions durant ma période commerciale. 
-              <!-- Accueillir et répondre aux besoins de la clientèle, tout en gérant l'attente que la demande client peut engendrer afin d'y répondre le plus rapidement possible. -->
-            </p>
+          <div class="item skill-box">
+            <a href="#contact">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+              </svg>
+              <p class="p-svg">
+                Contact
+              </p>
+            </a>
           </div>
-          <div class="box b4" data-anim="4">
-            <h2>Employée de restauration</h2>
-            <small>Année 2013 à 2015</small>
-            <p>
-              Dans la restauration collective en tant qu'employée polyvalente : Encaissement, service, entretien ...
-            </p>
-          </div>
-          <div class="box b5" data-anim="5">
-            <h2>Bac Pro Commerce</h2>
-            <small>Année 2009 à 2010</small>
-            <p>
-              Niveau 2nd
-              <br>
-              Bac Pro Commerce
-              <br>
-              Apprentissage
-            </p>
+          <div class="item skill-box">
+            <a href="#localisation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+              <p class="p-svg">
+                Où me trouver
+              </p>
+            </a>
           </div>
         </div>
-<!-- Portfolio Site Vitrine -->
-        <section id="portfolio">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="profil col-lg-5 col-12">
+      <div class="pht-profil">
+        <div class="pht-container">
+          <img class="image sizing-img-pht" src="./Ressource/277333653_500976058325481_2065490557997088091_n.png"
+            alt="">
+          <div class="middle">
+            <img class="sizing-img-pht" src="./Ressource/tiff.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>
+          <span class="p-profil">Nom :</span>
+          Tiffany FLORE <br>
+          <span class="p-profil">Age :</span>
+          27 ans <br>
+          <span class="p-profil">Ville actuelle :
+          </span> Oyonnax (01) <br>
+          <span class="p-profil">Loisirs :</span> Danse, musique, boxe, lecture
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-7 col-12 item box2" id="apropos">
+      <h1>À PROPOS DE MOI</h1>
+      <p>
+        Jeune stagiare en développement web et applications mobiles, je recherche un stage à partir d'Octobre 2022.
+      </p>
+      <p>
+        Ce stage me permettra de découvrir le métier de développeur, d'appréhender les différents styles :
+        <strong>Front-End</strong>, <strong>Back-End</strong>, et <strong>Full-Stack</strong>.
+      </p>
+      <p>
+        Je suis actuellement en formation qualifiante, au centre de formation <a
+          href="https://www.onlineformapro.com/">ONLINE FORMAPRO</a> sur Ambérieu-en-Bugey (01).
+        <br>
+        Mon objectif est d'atteindre est de décrocher mon diplôme, dans cette formation qualifiante afin de trouver une
+        agence avec qui, je pourrais grandir, collaborer, et fructifier les projets et ambitions communes.
+      </p>
+      <p>
+        Vous verrez dans mes compétences les différentes matières, technologies, et environement de travail que j'ai pu
+        étudier jusqu'à présent.
+        <br>
+        Vous verrez qu'avec les connaissances acquises à ce jour, je peux déjà vous présenter un petit bout de moi à
+        travers mon travail, que je vous présente dans mon Portfolio.
+      </p>
+      <p>
+        Je suis ambitieuse et autonome de nature, je suis une personne dynamique et déterminée.
+        <br>
+        Je mets un point d'honneur à satisfaire les missions qui me sont données.
+        <br>
+        C'est avec conviction et motivation que j'atteindrais mes obejctifs !
+      </p>
+      <p>
+        Vous souhaitez poursuivre l'aventure avec moi ? <br><br>
+        Restez connectés !
+        <br><br>
+        J'agrémenterais mon Portfolio au fil des projets réalisés ♥
+      </p>
+      <p>
+        Longue vie et prospérité à tous et à toutes ! ♥
+      </p>
+    </div>
+    <div class="col-12 btn-profil">
+      <button type="button" class="btn btn-primary btn-contact-pro" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Me contacter
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post">
+
+                <label for="firstname">Votre prénom :</label>
+                <input type="text" name="firstname" id="firstname">
+
+                <label for="lastname">Votre nom :</label>
+                <input type="text" name="lastname" id="lastname">
+
+                <label for="email">Votre adresse mail :</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Envoyer</button>
+
+              </form>
+              <h6>Téléphone :</h6>
+              <p class="p-modal-body">
+                07.78.79.37.85
+              </p>
+              <h6>Mail :</h6>
+              <p class="p-modal-body">
+                tiffany.flore.codeur@gmail.com
+              </p>
+              <div class="space-around">
+                <a href="https://www.linkedin.com/in/tiffany-flore" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                </a>
+                <a href="https://github.com/KayzPart/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-cv" href="./Ressource/Tiffany Flore - cv.pdf" target="_blank"
+        role="button">TÉLÉCHARGER MON CV</a>
+    </div>
+  </div>
+  <section id="competences" class="color-peps">
+    <div class="outer-container">
+      <h2 class="h2-competences">Compétences</h2>
+      <section class="competence center fadeInLeft animated" id="front-end">
+        <div class="c-item content">
+          <h4>Front-End</h4>
+          <div class="item-desc">
+            <p>Je vous présente dans cette catégorie les différents languages informatiques, frameworks, et supports
+              numériques que j'ai pu découvrir dans ma formation préqualifiante en développeur web et applications
+              mobiles.</p>
+          </div>
           <div class="space-between">
-            <div class="overlay-image">
-              <img class="image-box" src="./Ressource/ristorante.jpg" alt="redirection-site-ristorante-della-stella">
-              <div class="normal">
-                <div class="text-portfolio txt1">
-                  Ristorante Della Stella
-                  <i class="bi bi-plus-circle"></i>
+            <div class="item element">
+              <div class="space-between">
+                <div class="full">
+                  <strong>HTML5</strong>
+                  <div class="content">
+                    <div class="progress full1"></div>
+                    <div class="file-progress" id="html"> 0%</div>
+                  </div>
+                  <strong>CSS3</strong>
+                  <div class="content">
+                    <div class="progress full1"></div>
+                    <div class="file-progress" id="css">0%</div>
+                  </div>
+                  <strong>Bootstrap</strong>
+                  <div class="content">
+                    <div class="progress full2"></div>
+                    <div class="file-progress" id="boots">0%</div>
+                  </div>
+                  <strong>Wordpress</strong>
+                  <div class="content">
+                    <div class="progress full2"></div>
+                    <div class="file-progress" id="wordp">0%</div>
+                  </div>
+                  <strong>Php</strong>
+                  <div class="content">
+                    <div class="progress full3"></div>
+                    <div class="file-progress" id="php">0%</div>
+                  </div>
                 </div>
               </div>
-              <div class="hover">
-                <div class="text-portfolio txt2">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>BOOTSTRAP</li>
-                    <button>
-                      <a href="https://tiffanyf.promo-122.codeur.online/Ristorante-Della-Stella/" target="_blank">Voir le site</a>
-                    </button>
-                  </ul>
-                </div>
-              </div>
-            </div>  
-    <!-- Portfolio Jeu -->
-            <div class="overlay-image" >
-              <img class="image-box" src="./Ressource/Capturejeu (1) (1).jpg" alt="redirection-site-jeu-trouve-le-nombre">
-              <div class="normal">
-                <div class="text-portfolio txt1">
-                  Jeu - Trouve le nombre
-                  <i class="bi bi-plus-circle"></i>
-                </div>
-              </div>
-              <div class="hover">
-                <div class="text-portfolio txt2">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <button>
-                      <a href="https://tiffanyf.promo-122.codeur.online/jeu-trouve-le-nombre/" target="_blank">Voir le site</a>
-                    </button>
-                  </ul>
+            </div>
+            <div class="item element">
+              <div class="space-between">
+                <div class="full">
+                  <strong>SQL</strong>
+                  <div class="content">
+                    <div class="progress full3"></div>
+                    <div class="file-progress" id="sql">0%</div>
+                  </div>
+                  <strong>Photoshop</strong>
+                  <div class="content">
+                    <div class="progress full3"></div>
+                    <div class="file-progress" id="phtsp">0%</div>
+                  </div>
+                  <strong>Javascript</strong>
+                  <div class="content">
+                    <div class="progress full4"></div>
+                    <div class="file-progress" id="js">0%</div>
+                  </div>
+                  <strong>SASS</strong>
+                  <div class="content">
+                    <div class="progress full4"></div>
+                    <div class="file-progress" id="sass">0%</div>
+                  </div>
+                  <strong>Illustrator</strong>
+                  <div class="content">
+                    <div class="progress full5"></div>
+                    <div class="file-progress" id="illstr">0%</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-    <!-- Footer -->
-        <footer>
-          <div class="footer-contact" id="linkedin">
-            <div class="outer-container">
+        </div>
+        <figure class="c-item icon front">
+          <i class="bi bi-code-slash"></i>
+        </figure>
+      </section>
+      <section class="competence center fadeInRight animated" id="shop">
+        <figure class="c-item icon shop">
+          <i class="bi bi-shop"></i>
+        </figure>
+        <div class="c-item content">
+          <h4>Commerce</h4>
+          <div class="item-desc">
+            <p>Issue d'une formation de niveau 2nd en Bac Pro commerce, j'ai effectuer un apprentissage au sein d'une
+              enseigne marchande. <br> J'ai par la suite pris un poste en restauration en tant qu'employée polyvalente.
+              <br> Ces expériences m'on permise de développer plusieurs connaissances sur les techniques de ventes et
+              les procédures qui en découlent.
+            </p>
+          </div>
+          <div class="space-between">
+            <div class="item element">
               <div class="space-between">
-                <div class="item skill-box animated">
-                  <a href="https://www.linkedin.com/in/tiffany-flore" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
-                    </svg>
-                    <p class="p-svg">
-                    Linkedin
-                    </p>
-                  </a>
+                <div class="item names">
+                  <h6>ENCAISSER</h6>
+                  <h6>ACCUEILLIR</h6>
                 </div>
-                <div class="item skill-box animated" id="github">
-                  <a href="https://github.com/KayzPart/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    <p class="p-svg">
-                      Github
-                    </p>
-                  </a>
+                <div class="item stars">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
                 </div>
-                <div class="item skill-box animated" id="contact">
-                  <button type="button" class="btn btn-contact-pro" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                      <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
-                    </svg>
-                  </button>
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h6>Téléphone :</h6>
-                          <p class="p-modal-body">
-                           07.78.79.37.85
-                          </p>
-                          <h6>Mail :</h6>
-                          <p class="p-modal-body">
-                           tiffany.flore.codeur@gmail.com
-                          </p>
-                          <div class="space-around">
-                            <a href="#" target="_blank">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                              </svg>
-                            </a>
-                            <a href="#" target="_blank">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        </div>
-                      </div>
+              </div>
+            </div>
+            <div class="item element">
+              <div class="space-between">
+                <div class="item names">
+                  <h6>SERVIR</h6>
+                  <h6>HACCP</h6>
+                </div>
+                <div class="item stars">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="competence center fadeInLeft animated" id="soft-skills">
+        <div class="c-item content">
+          <h4>Soft Skills</h4>
+          <div class="item-desc">
+            <p>D'autres qualitées seront mise en évidence dans la section qui suivra "environement de travail".
+            </p>
+          </div>
+          <div class="space-between">
+            <div class="item element">
+              <div class="space-between">
+                <div class="item names">
+                  <h6>RIGOUREUSE</h6>
+                </div>
+                <div class="item stars">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item element">
+              <div class="space-between">
+                <div class="item names">
+                  <h6>ORGANISÉE</h6>
+                </div>
+                <div class="item stars">
+                  <div>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class="c-item icon soft-s">
+          <i class="bi bi-person-fill"></i>
+        </figure>
+      </section>
+      <div class="competence center fadeInRight animated" id="work">
+        <figure class="c-item icon network">
+          <i class="bi bi-briefcase-fill"></i>
+        </figure>
+        <div class="c-item content">
+          <h4>Environement de travail</h4>
+          <div class="item-desc end">
+            <i class="bi bi-laptop"></i>
+            <b>Systèmes d'exploitation :</b> Windows 10, Linux.
+            <br>
+            <i class="bi bi-code-slash"></i>
+            <b>Environement de développement :</b> Visual Studio Code, Github.
+            <br>
+            <i class="bi bi-award-fill"></i>
+            <b>Autres qualités :</b> Capacité d'adaptation, force de proposition, perfectionniste, gestion du stress.
+          </div>
+        </div>
+      </div>
+      <div>
+  </section>
+  <!-- Time-line (expérience) -->
+  <h2 class="h2-box" id="parcours">PARCOURS</h2>
+  <div class="box-timeline">
+    <div class="ligne"></div>
+
+    <div class="rond r1" data-anim="1"><span>&#128187;</span></div>
+    <div class="rond r2" data-anim="2"><span>&#127981;</span></div>
+    <div class="rond r3" data-anim="3"><span>&#128717;</span></div>
+    <div class="rond r4" data-anim="4"><span>&#127869;</span></div>
+    <div class="rond r5" data-anim="5"><span>&#128366;</span></div>
+    <div class="box b1" data-anim="1">
+
+      <h2>Formation Qualifiante</h2>
+      <small>Année 2022</small>
+      <p>
+        Du 3 Janvier au 28 Novembre 2022, vous me trouverez au centre de formation Onlineformapro sur Ambérien-en-Bugey,
+        afin de me préparer au métier de développeur web et applications mobiles ♥
+      </p>
+      <a href="https://www.onlineformapro.com/" target="_blank" class="btn-time-line">En savoir plus ...</a>
+    </div>
+    <div class="box b2" data-anim="2">
+      <h2>Travail en industrie</h2>
+      <small>Juin.2017 à Déc.2020</small>
+      <p>
+        Durant plusieurs années, suite à mon expérience dans le commerce, j'ai travailler dans différentes structures
+        industrielles, notament dans la production automobile, pharmaceutique, et cosmétiques.
+      </p>
+    </div>
+    <!-- <small style="text-align: center; display: block;">Tiffany, we ♥ you</small> -->
+    <div class="box b3" data-anim="3">
+      <h2>Employée commerciale</h2>
+      <small>Janv.2016 à Mai.2017</small>
+      <p>
+        L'accueil et la réponse aux besoins clientèles, tout en gérant l'attente que la demande client peut engendrer
+        afin d'y répondre le plus rapidement possible, ont étés mes principales missions durant ma période commerciale.
+        <!-- Accueillir et répondre aux besoins de la clientèle, tout en gérant l'attente que la demande client peut engendrer afin d'y répondre le plus rapidement possible. -->
+      </p>
+    </div>
+    <div class="box b4" data-anim="4">
+      <h2>Employée de restauration</h2>
+      <small>Année 2013 à 2015</small>
+      <p>
+        Dans la restauration collective en tant qu'employée polyvalente : Encaissement, service, entretien ...
+      </p>
+    </div>
+    <div class="box b5" data-anim="5">
+      <h2>Bac Pro Commerce</h2>
+      <small>Année 2009 à 2010</small>
+      <p>
+        Niveau 2nd
+        <br>
+        Bac Pro Commerce
+        <br>
+        Apprentissage
+      </p>
+    </div>
+  </div>
+  <!-- Portfolio Site Vitrine -->
+  <div class="stage">
+    <div class="container-portfolio">
+      <div class="carousel-ring">
+        <div class="img-carousel">
+          <h2>Jeu du nombre</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <button>
+              <a href="Jeudunombre" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+        <div class="img-carousel">
+          <h2>Ristorante</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>BOOTSTAP</li>
+            </ul>
+            <button>
+              <a href="RistoranteDellaStella" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+        <div class="img-carousel">
+          <h2>Departement</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <button>
+              <a href="ProjetDepartement" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+        <div class="img-carousel">
+          <h2>Reproduction Online</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <button>
+              <a href="ReproductionOnline" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+        <div class="img-carousel">
+          <h2>Prequal Memoru tuto</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <button>
+              <a href="MemoryGameTutoMilan" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+        <div class="img-carousel">
+          <h2>Beauty Elegance</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <button>
+              <a href="MemoryGameTutoMilan" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+        <div class="img-carousel">
+          <h2>En construction</h2>
+          <div class="overlay-carousel">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <button>
+              <a href="MemoryGameTutoMilan" target="_blank">Découvrir</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-contact" id="linkedin">
+      <div class="outer-container">
+        <div class="space-between">
+          <div class="item skill-box animated">
+            <a href="https://www.linkedin.com/in/tiffany-flore" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                </path>
+              </svg>
+              <p class="p-svg">
+                Linkedin
+              </p>
+            </a>
+          </div>
+          <div class="item skill-box animated" id="github">
+            <a href="https://github.com/KayzPart/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <p class="p-svg">
+                Github
+              </p>
+            </a>
+          </div>
+          <div class="item skill-box animated" id="contact">
+            <button type="button" class="btn btn-contact-pro" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+              </svg>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Téléphone :</h6>
+                    <p class="p-modal-body">
+                      07.78.79.37.85
+                    </p>
+                    <h6>Mail :</h6>
+                    <p class="p-modal-body">
+                      tiffany.flore.codeur@gmail.com
+                    </p>
+                    <div class="space-around">
+                      <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                          class="bi bi-linkedin" viewBox="0 0 16 16">
+                          <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                      </a>
+                      <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                          class="bi bi-github" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
                     </div>
                   </div>
-                  <p class="p-svg">
-                    tiffany.flore.codeur@gmail.com 
-                    <br>
-                    07.78.79.37.85
-                  </p>
-                </div>
-                <div class="item skill-box animated" id="localisation">
-                  <a href="https://www.google.com/maps/dir//Onlineformapro,+24+Bd+Jules+Ferry,+01000+Bourg-en-Bresse/@46.1953374,5.1514,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x47f35384b61fda61:0x562cc5368eb0b46!2m2!1d5.2214498!2d46.195412" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
-                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                    </svg>
-                    <p class="p-svg">
-                      Où me trouver
-                    </p>
-                  </a>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  </div>
                 </div>
               </div>
             </div>
+            <p class="p-svg">
+              tiffany.flore.codeur@gmail.com
+              <br>
+              07.78.79.37.85
+            </p>
           </div>
-        </footer>
-
-
-
-
-
-
-
-
-          
-        
-        <!-- JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+          <div class="item skill-box animated" id="localisation">
+            <a href="https://www.google.com/maps/dir//Onlineformapro,+24+Bd+Jules+Ferry,+01000+Bourg-en-Bresse/@46.1953374,5.1514,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x47f35384b61fda61:0x562cc5368eb0b46!2m2!1d5.2214498!2d46.195412"
+              target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                </path>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+              </svg>
+              <p class="p-svg">
+                Où me trouver
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/EasePack.min.js"></script> -->
-        <script src="./script.js"></script>
-    </body>
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+</body>
+
 </html>
+
+
+
+<div>
+  <h3></h3>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
