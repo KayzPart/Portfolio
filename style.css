@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-*,
-::before,
-::after {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -2001,10 +1998,3 @@ footer {
         height: 150rem;
     }
 }
-=======
-* {
-  margin: 0;
-  padding: 0;
-}
-/*# sourceMappingURL=style.css.map */
->>>>>>> 0da19e6f9cfd8aa5163a9be30ffecf0b6f01a275
